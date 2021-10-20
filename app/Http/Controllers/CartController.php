@@ -13,6 +13,24 @@ use Illuminate\Support\Facades\Validator;
 class CartController extends Controller
 {
 
+    public function NewOrder()
+    {
+        $user_id =  null;
+        $em_data =  "{}";
+        $em_type =  "carts";
+        $method  =  "POST";
+        $ac_id   =   json_decode(Ac_api::server($em_type, $em_data, $method), true)['id'] ;
+
+        if (isset(auth()->user()->id))
+            $user_id = auth()->user()->id;
+
+        $order =  Order::create([
+            "ac_id"     => $ac_id,
+            "user_id"   => $user_id,
+        ]);
+     }
+
+
 
    // START  Maincart  >>>>>
 
@@ -47,20 +65,12 @@ class CartController extends Controller
         $order = Order::where('active', 1)->first();
 
         if (!isset($order)) {
-            $user_id =  null;
-            $em_data =  "{}";
-            $em_type =  "carts";
-            $method  =  "POST";
-            $ac_id   =   json_decode(Ac_api::server($em_type, $em_data, $method), true)['id'] ;
 
-            if (isset(auth()->user()->id))
-                $user_id = auth()->user()->id;
+            $this->NewOrder();
+            $order = Order::where('active', 1)->first();
 
-            $order =  Order::create([
-                "ac_id"     => $ac_id,
-                "user_id"   => $user_id,
-            ]);
         }
+
 
 
 
@@ -90,8 +100,9 @@ class CartController extends Controller
         $order = Order::where('active', 1)->first();
         if (!isset($order)) {
 
-            $this->index();
-            return $this->RefreashItems();
+
+            $this->NewOrder();
+            $order = Order::where('active', 1)->first();
         }
         $em_data    =  "{}";
         $em_type    =  "carts/" . $order->ac_id. "/items";
@@ -111,8 +122,10 @@ class CartController extends Controller
         $order = Order::where('active', 1)->first();
         if (!isset($order)) {
 
-           $this->index();
-           $this->shipping_total_and_isOffer();
+
+
+           $this->NewOrder();
+           $order = Order::where('active', 1)->first();
         }
 
         $offer      =   0 ;
@@ -126,7 +139,10 @@ class CartController extends Controller
         $response = json_decode($response, true);
         $a = array();
 
-        for($i=0; $i<count($response['rates']) ;$i++ )
+       
+        //dd(count($response['rates']));
+        $to = count($response['rates']) ?? 0;
+        for($i=0; $i<$to ;$i++ )
         {
             // if isset offer shipping or not
             if( $response['rates'][$i]['identifier'] == "Custom;4;Offer | Free shipping")
@@ -181,6 +197,7 @@ class CartController extends Controller
     //START  order_products >>>>>
     public function order_products_add($cart_id)
     {
+
         // ADD All products to cart
         foreach ($_COOKIE as $key => $value) {
 
@@ -208,7 +225,9 @@ class CartController extends Controller
                 }
                 //catch exception
                 catch (Exception $e) {
-                }
+
+                    dd($e);
+                                }
             }
         }
     }

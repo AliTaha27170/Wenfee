@@ -253,6 +253,7 @@ Route::get('deleteProduct/{id}',function($id){
 
 Route::get('maincart/{id}/{q}' , [MainnCartController::class   , 'update']);
 Route::get('maincart'          , [CartController::class   , 'Maincart' ])->name('maincart');
+Route::get('RefreashItems'          , [CartController::class   , 'RefreashItems' ])->name('RefreashItems');
 
 
 
@@ -266,7 +267,7 @@ Route::get('unLike/{id}' , [LikeController::class , 'UnLike'])->name('UnLike');
 
 
 
-Route::get('checkout222'   , [PageController::class , 'checkout'])->name('checkout');
+Route::get('checkout'   , [PageController::class , 'checkout'])->name('checkout');
 
 Route::get('/clear-cache', function() {
     $exitCode = Artisan::call('cache:clear');

@@ -10,8 +10,11 @@ class Ac_api
  */
 static public function server ($em_type,$em_data,$method){
 
-    $token=env('ac_token');
-    $url="".env('ac_base_uri').$em_type;
+
+    $ac_base_uri = "https://wenfeeusa.americommerce.com/api/v1/";
+    $ac_token    = "b96360f186abeed68e37967076476646";
+    $token       = $ac_token;
+    $url         =  $ac_base_uri.$em_type;
 
     $curl = curl_init();
 
@@ -35,6 +38,7 @@ static public function server ($em_type,$em_data,$method){
     $response = curl_exec($curl);
 
     curl_close($curl);
+
     return $response;
 
     if($method=="POST")

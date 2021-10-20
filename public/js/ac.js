@@ -353,7 +353,7 @@ function add_to_cart_pview(){
 }
 
 function cart(){
- 
+
         $('#cd-cart').html('<img alt="" class="hCL kVc L4E MIw" importance="auto" loading="auto" src="https://i.pinimg.com/originals/9e/91/7f/9e917f152f70800d105c76ceb7ac2b36.gif" width="550px"> <br><center> <h3>We`re update your shopping cart </h3> </center>');
 
         $.ajax({
@@ -381,6 +381,9 @@ function cart(){
 function add_to_cart(id,quantity)
 {
 
+    $.get("../../../../RefreashItems", function(data, status){
+
+      });
 
 	var item={};
 	item.itemId = id;
@@ -430,7 +433,7 @@ for(var i=0; i < cookies.length; i++) {
     var name = equals > -1 ? cookies[i].substr(0, equals) : cookies[i];
     document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
 }
-		window.location.href ='../../../../checkout222';
+		window.location.href ='../../../../checkout';
         //window.location.href ='../../../../cart';
 
 }
