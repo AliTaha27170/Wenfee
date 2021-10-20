@@ -11,6 +11,8 @@ app/storage/
 storage
 public/storage
 public/hot
+vendor
+vendor/*
 storage/*
 storage/*.key
 .env
