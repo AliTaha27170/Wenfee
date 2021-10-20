@@ -1,0 +1,189 @@
+a
+{
+    color: #007b70;
+    text-decoration: none;
+}
+a:hover
+{
+    color: #007b70;
+}
+h2
+{
+    font-size: 25px;
+    color: #007b70;
+    font-weight: bold;
+}
+.hidden
+{
+    display: none;
+}
+.multi-inputs
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.two-inputs div
+{
+    width : 48%
+}
+
+.three-inputs div
+{
+    width: 30%;
+}
+
+  /*buttons*/
+  #Buttons
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+  #Cancel_Button
+  {
+    background: #ba0000;
+    border-radius: 5px;
+    padding: 12px;
+    color: #fff;
+    margin-bottom: 5px;
+    border :none ;
+  }
+  #Continue_Buttons
+  {
+    background: #007b70;
+    border-radius: 5px;
+    padding: 12px;
+    color: #fff;
+    margin-bottom: 5px;
+    border : none ;
+  }
+  /*End Of Buttons*/
+  /*Form Style*/
+#my_form 
+{
+    padding: 100px 50px 50px 50px;
+    background-color: transparent;
+}
+#my_form label
+{
+    display: block;
+}
+#form_header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-section
+{
+    border : 1px solid#ddd ;
+    padding: 25px;
+}
+#my_form input
+{
+    display: block;
+    margin:  0 0 20px 0;
+    width: 100%;
+    padding: 10px;
+    font-weight: 400px;
+    background-clip: padding-box;
+    border-radius: .25rem;
+    color : #495057;
+    border: 1px solid #ced4da;
+}
+#my_form input[type="radio"]
+{
+    content: "";
+    width: 1.3em;
+    height: 1.3em;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1px #ced4da;
+    -webkit-appearance: none;
+    cursor: pointer;
+    margin-right: 20px;
+    vertical-align: top;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#my_form input[type="radio"]:checked
+{
+    background: #007b70;
+}
+#my_form textarea
+{
+    min-height: 70px;
+    width: 100%;
+    border: 1px solid #ced4da;
+}
+#select_input
+{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ced4da;
+    height: 46px;
+    border-radius: .25rem;
+}
+.radio-input
+{
+    display: flex;
+    margin: 20px 0 ;
+}
+
+#shipping_cost_text
+{
+    display: block;
+}
+  /*End O Form Style*/
+
+
+/*Third Section (Payment Methods) */
+.methods {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .methods li {
+    padding: 10px;
+    background-color: #fff;
+    border-right: 1px solid white;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: bold;
+    color: #007b70;
+  }
+  .methods li.active,
+  .methods li:hover {
+    background-color: #eee;
+  }
+  .methods-content {
+    background-color: #eee;
+  }
+  .methods-content > div {
+    padding: 20px;
+  }
+  .methods-content > div:not(:first-child) {
+    display: none;
+  }
+  .credit-card > input
+  {
+      display: block;
+  }
+  /*End Of Third Section (Payment Methods) */
+
+        /*Responsive*/
+        @media (max-width : 767px)
+        {
+            #my_form
+            {
+                padding: 50px 0 50px 0;
+            }
+            .methods
+            {
+                display: block;
+            }
+        }
