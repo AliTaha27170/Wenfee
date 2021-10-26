@@ -32,7 +32,7 @@ class PageController extends Controller
        $recipes=Recipe::orderby('created_at','DESC')->take(3)->get();
        $brands=Brand::inRandomOrder()->get();
        $cookbooks=ProductCategory::where('slug','cook-books')->first();
-      // $books=Product::where('product_category_id',$cookbooks->id)->get();
+       //$books=Product::where('product_category_id',$cookbooks->id)->get();
 
        return view('index',compact('slides','slideCategories','recipes','cookbooks','brands','slideCategory'));
    }
@@ -278,20 +278,18 @@ class PageController extends Controller
 
 public function checkout ()
 {
-//     // unset cookies
-// if (isset($_SERVER['HTTP_COOKIE'])) {
-//     $cookies = explode(';', $_SERVER['HTTP_COOKIE']);
-//     foreach($cookies as $cookie) {
-//         $parts = explode('=', $cookie);
-//         $name  = trim($parts[0]);
-//         setcookie($name, '', time()-1000);
-//         setcookie($name, '', time()-1000, '/');
-//     }
+    // unset cookies
+if (isset($_SERVER['HTTP_COOKIE'])) {
+    $cookies = explode(';', $_SERVER['HTTP_COOKIE']);
+    foreach($cookies as $cookie) {
+        $parts = explode('=', $cookie);
+        $name  = trim($parts[0]);
+        setcookie($name, '', time()-1000);
+        setcookie($name, '', time()-1000, '/');
+    }
 
-//     return redirect('https://wenfeeusa.americommerce.com/store/shopcart.aspx');
-// }
-
-return view('checkout');
+    return redirect('https://wenfeeusa.americommerce.com/store/shopcart.aspx');
+}
 }
 //END >>
 

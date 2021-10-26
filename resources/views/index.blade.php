@@ -84,7 +84,7 @@ use     App\hellpers\like_;
 
         <!--____________________Section_____________________-->
 
-        <section class="Our-Categories" >
+        <section class="Our-Categories" hidden >
         <div class="container-fluid">
             <div class="row">
             <h2 id="Categories-Title">Our Categories</h2>
@@ -432,7 +432,7 @@ use     App\hellpers\like_;
             <br><br>
 
                     <!------------------------ Recipes Slider ------------------------>
-           <div class="Recipes-Slider">
+           <div class="Recipes-Slider" hidden>
             <div class="ft-recipe">
                     <div class="ft-recipe__thumb">
                         <img src="https://wenfee.com/jasmine/thenewwenfee/storage/app/public/recipes/August2021/EYl3bDoRpuMBBgfYgoza.jpg">

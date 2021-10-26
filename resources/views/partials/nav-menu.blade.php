@@ -140,11 +140,11 @@ Favorite List
 
     <!-- Basket   -->
 
-    <div id="cd-cart-trigger">
+    <div id="cd-cart-trigger_">
       <a class=""></a>
-      <a href="#0" class="Shopping-cart" >
+      <a href="https://wenfeeusa.americommerce.com/store/shopcart.aspx" class="Shopping-cart" >
         <i class="fas fa-shopping-cart"></i><small></small><span class="PurchaseValue" > {{-- comment
-         $ {{ isset($_COOKIE['total'] ) ? $_COOKIE['total'] : '0' }} --}} SHOPPING CART</span>
+         $ {{ isset($_COOKIE['total'] ) ? $_COOKIE['total'] : '0' }} --}} <small style="font-size: 12px"> SHOPPING CART</small></span>
 
       </a>
       <span class="total-qty">1</span>
