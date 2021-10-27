@@ -99,21 +99,20 @@
                     <h2 class="title">Change Password</h2>
                     <hr>
                     <div class="row">
-                        {{-- <div class="col-md-6">
+                        <div class="col-md-6">
                             <p>New Password</p>
-                            <input type="password" name="NewPassword"> --}}
+                            <input type="password" name="NewPassword">
                             <p>Current Password</p>
                             <input type="password" name="password">
 
                             <input type="text" hidden name="email" value="{{ auth()->user()->email }}" id="">
 
-                            <button>222</button>
                         </div>
-                        {{-- <div class="col-md-5">
+                        <div class="col-md-5">
                             <p>Confirm Your Password</p>
                             <input type="password" name="ConfirmPassword">
                             <button>Change Password</button>
-                        </div> --}}
+                        </div>
                     </div>
                 </div>
             </form>

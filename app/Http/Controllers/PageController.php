@@ -324,7 +324,6 @@ public function change_password(Request $request)
                "password" => Hash::make($request('password'))
            ]
            );
-        return back()->with('msg','Password has been modified successfully ');
 
    }
 
@@ -333,10 +332,14 @@ public function change_password(Request $request)
    if (Auth::attempt($credentials)) {
        // Authentication passed...
        // use the below code to redirect the user to dashboard.
-       dd('welcome');
-       // return redirect()->intended('dashboard');
+        User::find(auth()->user()->id)->update(
+        [
+            "password" => Hash::make($request['NewPassword'])
+        ]
+        );
+        return back()->with('msg','Password has been modified successfully ');
+
    }
-   dd('no');
    return back()->with('msg','incorrect password ! ');
 }
 
