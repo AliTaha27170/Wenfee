@@ -13,8 +13,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
-    }
+
+  }
 
     /**
      * Bootstrap any application services.
@@ -25,11 +25,11 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         view()->composer(['footer', '*'], function ($view) {
-            
+
                    //Change this to the code you would use to get the notifications
-                   $contacts=ContactInfo::all();      
+                   $contacts=ContactInfo::all();
                     //dd($about);
                     $view->with('contacts',$contacts);
-                });  
+                });
     }
 }

@@ -11,9 +11,12 @@ use App\Models\Recipe;
 use App\Models\RecipeCategory;
 use App\Models\res_products;
 use App\Models\Slide;
+use App\Models\User;
 use CategoriesTableSeeder;
 use Illuminate\Http\Request;
 use Gloudemans\Shoppingcart\Facades\Cart;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
 class PageController extends Controller
@@ -32,7 +35,7 @@ class PageController extends Controller
        $recipes=Recipe::orderby('created_at','DESC')->take(3)->get();
        $brands=Brand::inRandomOrder()->get();
        $cookbooks=ProductCategory::where('slug','cook-books')->first();
-       //$books=Product::where('product_category_id',$cookbooks->id)->get();
+      // $books=Product::where('product_category_id',$cookbooks->id)->get();
 
        return view('index',compact('slides','slideCategories','recipes','cookbooks','brands','slideCategory'));
    }
@@ -278,18 +281,20 @@ class PageController extends Controller
 
 public function checkout ()
 {
-    // unset cookies
-if (isset($_SERVER['HTTP_COOKIE'])) {
-    $cookies = explode(';', $_SERVER['HTTP_COOKIE']);
-    foreach($cookies as $cookie) {
-        $parts = explode('=', $cookie);
-        $name  = trim($parts[0]);
-        setcookie($name, '', time()-1000);
-        setcookie($name, '', time()-1000, '/');
-    }
+//     // unset cookies
+// if (isset($_SERVER['HTTP_COOKIE'])) {
+//     $cookies = explode(';', $_SERVER['HTTP_COOKIE']);
+//     foreach($cookies as $cookie) {
+//         $parts = explode('=', $cookie);
+//         $name  = trim($parts[0]);
+//         setcookie($name, '', time()-1000);
+//         setcookie($name, '', time()-1000, '/');
+//     }
 
-    return redirect('https://wenfeeusa.americommerce.com/store/shopcart.aspx');
-}
+//     return redirect('https://wenfeeusa.americommerce.com/store/shopcart.aspx');
+// }
+
+return view('checkout');
 }
 //END >>
 
@@ -308,5 +313,31 @@ if (isset($_SERVER['HTTP_COOKIE'])) {
 //     ]);
 //     return test;
 //    }
+
+
+public function change_password(Request $request)
+{
+   if(0)
+   {
+       User::find(auth()->user()->id)->update(
+           [
+               "password" => Hash::make($request('password'))
+           ]
+           );
+        return back()->with('msg','Password has been modified successfully ');
+
+   }
+
+   $credentials = $request->only('email', 'password');
+
+   if (Auth::attempt($credentials)) {
+       // Authentication passed...
+       // use the below code to redirect the user to dashboard.
+       dd('welcome');
+       // return redirect()->intended('dashboard');
+   }
+   dd('no');
+   return back()->with('msg','incorrect password ! ');
+}
 
 }

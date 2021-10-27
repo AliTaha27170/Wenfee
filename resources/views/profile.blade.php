@@ -9,8 +9,8 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="name">
-                    <h2>My Name</h2>
-                    <p>mail@mail.com</p>
+                    <h2>{{ auth()->user()->name }}</h2>
+                    <p>{{ auth()->user()->email }}</p>
                 </div>
                 <div class="profile-list">
                     <ul>
@@ -30,9 +30,9 @@
                             @csrf
                             <div class="col-md-6">
                                 <p>Full Name</p>
-                                <input type="text" name="name" value="{{ old('name', auth()->user()->name) }}">
+                                <input type="text" name="name" value="{{  auth()->user()->name}}">
                                 <p>Email address</p>
-                                <input type="text" name="email" value="{{ old('email', auth()->user()->email) }}" readonly>
+                                <input type="text" name="email" value="{{  auth()->user()->email }}" readonly>
                                 <p>Address</p>
                                 <input type="text" name="address" value="{{ old('email', auth()->user()->address) }}">
 
@@ -81,8 +81,8 @@
                                 </tr>
                                 @endforeach
                             </table>
-                            <p style="text-align: right; margin: 20px;">Shipping Cost: 11.99 USD</p>    
-                            <p style="text-align: right; margin: 20px;">Total Cost: {{$order->billing_total}} USD</p>    
+                            <p style="text-align: right; margin: 20px;">Shipping Cost: 11.99 USD</p>
+                            <p style="text-align: right; margin: 20px;">Total Cost: {{$order->billing_total}} USD</p>
                             @endforeach
 
 
@@ -93,24 +93,30 @@
                     </div>
                 </div>
 
+                <form action="{{ route('change_password') }}" method="POST">
+                     @csrf
                 <div id="four" class="tab-ele personal-list">
                     <h2 class="title">Change Password</h2>
                     <hr>
                     <div class="row">
-                        <div class="col-md-6">
+                        {{-- <div class="col-md-6">
                             <p>New Password</p>
-                            <input type="text">
+                            <input type="password" name="NewPassword"> --}}
                             <p>Current Password</p>
-                            <input type="text">
+                            <input type="password" name="password">
 
+                            <input type="text" hidden name="email" value="{{ auth()->user()->email }}" id="">
+
+                            <button>222</button>
                         </div>
-                        <div class="col-md-5">
+                        {{-- <div class="col-md-5">
                             <p>Confirm Your Password</p>
-                            <input type="text">
+                            <input type="password" name="ConfirmPassword">
                             <button>Change Password</button>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
+            </form>
             </div>
         </div>
     </div>
