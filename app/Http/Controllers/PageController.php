@@ -232,22 +232,22 @@ class PageController extends Controller
             $products=$products->where('is_offer',1)->orderBy('created_at',"ASC");
         }
         elseif(isset($request->frozen)){
-            $products=$products->where('is_frozen',1)->orderBy('created_at',"ASC");
+            $products=$products->where('frozen',1)->orderBy('created_at',"ASC");
         }
         elseif(isset($request->refrigerated)){
-            $products=$products->where('is_ref',1)->orderBy('created_at',"ASC");
+            $products=$products->where('refrigerated',1)->orderBy('created_at',"ASC");
         }
         elseif(isset($request->refrigerated) && ($request->frozen)){
-            $products=$products->where('is_ref',1)->where('is_frozen',1)->orderBy('created_at',"ASC");
+            $products=$products->where('refrigerated',1)->where('frozen',1)->orderBy('created_at',"ASC");
         }
         elseif(isset($request->refrigerated) && ($request->offer)){
-            $products=$products->where('is_ref',1)->where('is_offer',1)->orderBy('created_at',"ASC");
+            $products=$products->where('refrigerated',1)->where('is_offer',1)->orderBy('created_at',"ASC");
         }
         elseif(isset($request->frozen) && ($request->offer)){
-            $products=$products->where('is_frozen',1)->where('is_offer',1)->orderBy('created_at',"ASC");
+            $products=$products->where('frozen',1)->where('is_offer',1)->orderBy('created_at',"ASC");
         }
         elseif(isset($request->frozen) && ($request->offer) && ($request->refrigerated)){
-            $products=$products->where('is_frozen',1)->where('is_offer',1)->where('is_ref',1)->orderBy('created_at',"ASC");
+            $products=$products->where('frozen',1)->where('is_offer',1)->where('refrigerated',1)->orderBy('created_at',"ASC");
         }
         elseif(isset($request->keyword)){
             $products=$products->where('name','Like', '%' .$request->keyword. '%');

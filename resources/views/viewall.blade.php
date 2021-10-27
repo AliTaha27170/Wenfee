@@ -69,7 +69,7 @@ use     App\hellpers\like_;
 
             <div class="col-md-9">
                 <div class="container Number-Of-Products">
-                  <span>**Items</span>
+                  <span>{{ $products->count() }} Items</span>
                 </div>
                 <div class="right-panel">
                     <div class="products">
