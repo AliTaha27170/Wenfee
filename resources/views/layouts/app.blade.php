@@ -2,7 +2,8 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
-    
+
+
 <head>
     <head>
         <meta charset="UTF-8">
@@ -26,7 +27,7 @@
         {{-- nav and menu  --}}
         <link rel="stylesheet" href="{{asset('css/Navbar.css')}} ">
 
-        
+
     </head>
 </head>
 
@@ -54,12 +55,12 @@
 
         function like (e,id)
         {
-      
+
 
             @if(!(isset(auth()->user()->id)))
 
             return alert('You must login first ! ');
-                
+
             @endif
 
 
@@ -78,7 +79,7 @@
 
 
             $.get("../../../unLike/"+id, function(data, status){
-                
+
                  $(e).removeClass(' fas fa-heart ');
                  $(e).addClass('fi fi-rr-heart');
                  $(e).attr("onclick","like(this," + id + ")");
@@ -87,26 +88,26 @@
 
         }
 
-        
+
     </script>
 
 
-   
+
     {{-- get products  --}}
 
     <script>
         function getProducts(id) {
             $('#products_view').load("../../../../../get_p/" +id);
         }
-        
+
 
           </script>
-      
+
 
     {{-- *** --}}
     @stack('scripts')
 
- 
+
 </body>
 
 </html>
