@@ -260,33 +260,35 @@ use     App\hellpers\like_;
 
 
 
-    @if ($slideCategories)
-        <div class="filter-box">
-            <div class="filter-head">
-                <ul>
-                    @foreach ($slideCategories as $item)
-                        <li><button class="mbtn" onclick="filter('.{{ $item->slug }}', this)">{{ $item->name }}</button>
+
+            @if ($slideCategories)
+            <div class="filter-box">
+                <div class="filter-head">
+                    <ul>
+                        @foreach ($slideCategories as $item)
+                        <li><button class="mbtn" onclick="getProducts({{$item->id}})" >{{ $item->name }}</button>
                         </li>
-                    @endforeach
-                </ul>
-            </div>
-
-            <script>
-                function filter(t, btn) {
-                    $(".filter-head .active").removeClass("active");
-                    $(".filter-box .grid").isotope({
-                        filter: t
-                    });
-                    $(btn).addClass("active");
-                }
-
-                $(document).ready(function() {
-                    $(".filter-head li button")[0].click();
-                })
-
-            </script>
-
+                        @endforeach
+                    </ul>
                 </div>
+                <div name="product" id="products_view">
+               {{-- <script>
+                    function filter(t, btn) {
+                        $(".filter-head .active").removeClass("active");
+                        $(".filter-box .grid").isotope({
+                            filter: t
+                        });
+                        $(btn).addClass("active");
+                    }
+    
+                    $(document).ready(function() {
+                        $(".filter-head li button")[0].click();
+                    })
+     
+                </script> --}}
+          </div>
+          @endif
+    
 {{---
             <div class="products">
                 <div class="grid">
@@ -370,7 +372,6 @@ use     App\hellpers\like_;
                                             </div>
                                         </div>
                                     </div>
-                                    @endif
                                 </div>
                             </div>
 
@@ -381,7 +382,6 @@ use     App\hellpers\like_;
 
         </div>
     --}}
-    @endif
     <!-- Brands Slider -->
     <section class="recipes-section">
         <div class="content-box">
