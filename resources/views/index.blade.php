@@ -83,7 +83,7 @@ use     App\hellpers\like_;
     <!--_____________________________________________________________________-->
 
                 <!--____________________Section_____________________-->
-        
+
                 <section class="Our-Categories" >
         <div class="container-fluid">
             <div class="row">
@@ -280,15 +280,15 @@ use     App\hellpers\like_;
                         });
                         $(btn).addClass("active");
                     }
-    
+
                     $(document).ready(function() {
                         $(".filter-head li button")[0].click();
                     })
-     
+
                 </script> --}}
           </div>
           @endif
-    
+
 {{---
             <div class="products">
                 <div class="grid">
@@ -433,74 +433,17 @@ use     App\hellpers\like_;
 
                     <!------------------------ Recipes Slider ------------------------>
            <div class="Recipes-Slider">
-            <div class="ft-recipe">
-                    <div class="ft-recipe__thumb">
-                        <img src="https://wenfee.com/jasmine/thenewwenfee/storage/app/public/recipes/August2021/EYl3bDoRpuMBBgfYgoza.jpg">
-                    </div>
-                    <div class="ft-recipe__content">
-                        <header class="content__header">
-                            <div class="row-wrapper">
-                                <h2 class="recipe-title">Daoud Pasha</h2>
-                                <div class="user-rating"></div>
-                            </div>
-                            <ul class="recipe-details">
-                                <li class="recipe-details-item time">
-                                    <img src="/img/fi-rr-time-check.svg" alt="">
-                                    <span class="value">20</span><span class="title">Minutes</span>
-                                </li>
-                                <li class="recipe-details-item servings">
-                                    <img src="/img/fi-rr-users.svg" alt="">
-                                    <span class="value">4-6</span><span class="title">Serving</span>
-                                </li>
-                            </ul>
-                        </header>
-                        <p class="description">
-                            There’s no better way to celebrate May being National Strawberry Month than by sharing a sweet
-                            treat
-                            with your pup!!! Strawberries...</p>
-                        <footer class="content__footer"><a href="/recipe/preview/daoud-pasha">View Recipe</a></footer>
-                    </div>
-            </div>
 
-
-                    <div class="ft-recipe">
-                    <div class="ft-recipe__thumb">
-                        <img src="https://wenfee.com/jasmine/thenewwenfee/storage/app/public/recipes/August2021/EYl3bDoRpuMBBgfYgoza.jpg">
-                    </div>
-                    <div class="ft-recipe__content">
-                        <header class="content__header">
-                            <div class="row-wrapper">
-                                <h2 class="recipe-title">Daoud Pasha</h2>
-                                <div class="user-rating"></div>
-                            </div>
-                            <ul class="recipe-details">
-                                <li class="recipe-details-item time">
-                                    <img src="/img/fi-rr-time-check.svg" alt="">
-                                    <span class="value">20</span><span class="title">Minutes</span>
-                                </li>
-                                <li class="recipe-details-item servings">
-                                    <img src="/img/fi-rr-users.svg" alt="">
-                                    <span class="value">4-6</span><span class="title">Serving</span>
-                                </li>
-                            </ul>
-                        </header>
-                        <p class="description">
-                            There’s no better way to celebrate May being National Strawberry Month than by sharing a sweet
-                            treat
-                            with your pup!!! Strawberries...</p>
-                        <footer class="content__footer"><a href="/recipe/preview/daoud-pasha">View Recipe</a></footer>
-                    </div>
-            </div>
-
+            @foreach($recipes as $recipe)
 
             <div class="ft-recipe">
                     <div class="ft-recipe__thumb">
-                        <img src="https://wenfee.com/jasmine/thenewwenfee/storage/app/public/recipes/August2021/EYl3bDoRpuMBBgfYgoza.jpg">
+                        <img src="https://wenfee.com/jasmine/thenewwenfee/storage/app/public/{{ $recipe->recipe_image }}">
                     </div>
                     <div class="ft-recipe__content">
                         <header class="content__header">
                             <div class="row-wrapper">
-                                <h2 class="recipe-title">Daoud Pasha</h2>
+                                <h2 class="recipe-title">{{$recipe->title}}</h2>
                                 <div class="user-rating"></div>
                             </div>
                             <ul class="recipe-details">
@@ -518,99 +461,12 @@ use     App\hellpers\like_;
                             There’s no better way to celebrate May being National Strawberry Month than by sharing a sweet
                             treat
                             with your pup!!! Strawberries...</p>
-                        <footer class="content__footer"><a href="/recipe/preview/daoud-pasha">View Recipe</a></footer>
+                        <footer class="content__footer"><a href="/recipe/preview/{{ $recipe->slug }}">View Recipe</a></footer>
                     </div>
             </div>
 
+            @endforeach
 
-            <div class="ft-recipe">
-                    <div class="ft-recipe__thumb">
-                        <img src="https://wenfee.com/jasmine/thenewwenfee/storage/app/public/recipes/August2021/EYl3bDoRpuMBBgfYgoza.jpg">
-                    </div>
-                    <div class="ft-recipe__content">
-                        <header class="content__header">
-                            <div class="row-wrapper">
-                                <h2 class="recipe-title">Daoud Pasha</h2>
-                                <div class="user-rating"></div>
-                            </div>
-                            <ul class="recipe-details">
-                                <li class="recipe-details-item time">
-                                    <img src="/img/fi-rr-time-check.svg" alt="">
-                                    <span class="value">20</span><span class="title">Minutes</span>
-                                </li>
-                                <li class="recipe-details-item servings">
-                                    <img src="/img/fi-rr-users.svg" alt="">
-                                    <span class="value">4-6</span><span class="title">Serving</span>
-                                </li>
-                            </ul>
-                        </header>
-                        <p class="description">
-                            There’s no better way to celebrate May being National Strawberry Month than by sharing a sweet
-                            treat
-                            with your pup!!! Strawberries...</p>
-                        <footer class="content__footer"><a href="/recipe/preview/daoud-pasha">View Recipe</a></footer>
-                    </div>
-            </div>
-
-
-            <div class="ft-recipe">
-                    <div class="ft-recipe__thumb">
-                        <img src="https://wenfee.com/jasmine/thenewwenfee/storage/app/public/recipes/August2021/EYl3bDoRpuMBBgfYgoza.jpg">
-                    </div>
-                    <div class="ft-recipe__content">
-                        <header class="content__header">
-                            <div class="row-wrapper">
-                                <h2 class="recipe-title">Daoud Pasha</h2>
-                                <div class="user-rating"></div>
-                            </div>
-                            <ul class="recipe-details">
-                                <li class="recipe-details-item time">
-                                    <img src="/img/fi-rr-time-check.svg" alt="">
-                                    <span class="value">20</span><span class="title">Minutes</span>
-                                </li>
-                                <li class="recipe-details-item servings">
-                                    <img src="/img/fi-rr-users.svg" alt="">
-                                    <span class="value">4-6</span><span class="title">Serving</span>
-                                </li>
-                            </ul>
-                        </header>
-                        <p class="description">
-                            There’s no better way to celebrate May being National Strawberry Month than by sharing a sweet
-                            treat
-                            with your pup!!! Strawberries...</p>
-                        <footer class="content__footer"><a href="/recipe/preview/daoud-pasha">View Recipe</a></footer>
-                    </div>
-            </div>
-
-
-            <div class="ft-recipe">
-                    <div class="ft-recipe__thumb">
-                        <img src="https://wenfee.com/jasmine/thenewwenfee/storage/app/public/recipes/August2021/EYl3bDoRpuMBBgfYgoza.jpg">
-                    </div>
-                    <div class="ft-recipe__content">
-                        <header class="content__header">
-                            <div class="row-wrapper">
-                                <h2 class="recipe-title">Daoud Pasha</h2>
-                                <div class="user-rating"></div>
-                            </div>
-                            <ul class="recipe-details">
-                                <li class="recipe-details-item time">
-                                    <img src="/img/fi-rr-time-check.svg" alt="">
-                                    <span class="value">20</span><span class="title">Minutes</span>
-                                </li>
-                                <li class="recipe-details-item servings">
-                                    <img src="/img/fi-rr-users.svg" alt="">
-                                    <span class="value">4-6</span><span class="title">Serving</span>
-                                </li>
-                            </ul>
-                        </header>
-                        <p class="description">
-                            There’s no better way to celebrate May being National Strawberry Month than by sharing a sweet
-                            treat
-                            with your pup!!! Strawberries...</p>
-                        <footer class="content__footer"><a href="/recipe/preview/daoud-pasha">View Recipe</a></footer>
-                    </div>
-            </div>
             </div>
                 </div>
 
