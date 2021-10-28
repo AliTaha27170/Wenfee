@@ -113,7 +113,9 @@
                                             <span class="code">#{{ $prod->code }}</span>
                                         </h3>
                                         <h4 style="height: 192px">{!! $prod->body  !!}
-                                        <span class="NewProduct">NEW</span>
+                                            @if ($prod->new)
+                                            <span class="NewProduct">NEW</span>
+                                            @endif
                              @if ($prod->frozen)
                                 <div class="FrozenProduct"><i class="fas fa-snowflake"></i><span>Frozen</span></div>
                             @endif

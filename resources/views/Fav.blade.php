@@ -33,7 +33,10 @@
                                             <span class="code">#{{ $like->product->code }}</span>
                                         </h3>
                                         <h4 style="height: 150px">{!! $like->product->body  !!}
-                                        <span class="NewProduct">NEW</span>
+                                            @if ($like->new)
+                                            <span class="NewProduct">NEW</span>
+                                            @endif
+
 
 
                                         @if ($like->product->frozen)

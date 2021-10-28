@@ -44,7 +44,10 @@ use     App\hellpers\like_;
                         <h4 style="height: 192px">
                         <p class="ProductName" style="margin-top: 50px;">{!! $product->body  !!}</p>
                         </h4>
+                        @if ($product->new)
                         <span class="NewProduct">NEW</span>
+                        @endif
+
                         @if ($product->frozen)
                         <div class="FrozenProduct"><i class="fas fa-snowflake"></i><span>Frozen</span></div>
                     @endif
@@ -213,8 +216,11 @@ use     App\hellpers\like_;
                                         </h3>
 
                                         <h4 style="height: 192px">{!! $prod->body  !!}
+                                            @if ($prod->new)
                                             <span class="NewProduct">NEW</span>
-                                 @if ($prod->frozen)
+                                            @endif
+
+                                            @if ($prod->frozen)
                                     <div class="FrozenProduct"><i class="fas fa-snowflake"></i><span>Frozen</span></div>
                                 @endif
 

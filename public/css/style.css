@@ -1304,7 +1304,6 @@ body .anim1 .counterrotate {
   background: #e92e2e;
   padding: 1px 15px;
   border-radius: 7px;
-  display: none /****/;
 }
 .products .item .code {
   color: #888;
@@ -3326,7 +3325,7 @@ body .modal a.close-modal {
     background-color: #fff;
     color: #007b70;
     border: 1px solid #007b70;
-    border-radius: 8px; 
+    border-radius: 8px;
     margin: 10px 0;
 }
 
@@ -4088,7 +4087,7 @@ border-radius: 4px;
 position: fixed;
 bottom: 30px;
 right: 30px;
-transition: background-color .3s, 
+transition: background-color .3s,
 opacity .5s, visibility .5s;
 opacity: 0;
 visibility: hidden;
@@ -4338,7 +4337,7 @@ ul {
     font-weight: 500;
 }
 .About-image
-{ 
+{
     margin-top :2rem ;
     border-radius: 8px;
     height: 333px;

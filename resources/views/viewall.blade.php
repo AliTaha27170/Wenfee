@@ -32,14 +32,14 @@ use     App\hellpers\like_;
                         <ul id="List">
                                 @foreach ($categories as $item)
                                 @if (request()->slug)
-                                
+
                             <li><a href="#"> {{ $item->name }} </a></li>
                             @else
                             <li><a href="#"> {{ $item->name }} </a></li>
                             @endif
                             @endforeach
                         </ul>
-                        
+
                           <!----------- End Of New List ------------>
                         {{--
                         <h2>Category</h2>
@@ -115,8 +115,9 @@ use     App\hellpers\like_;
                                             <span class="code">#{{ $prod->code }}</span>
                                         </h3>
                                         <h4 style="height: 192px">{!! $prod->body  !!}
-                                        <span class="NewProduct">NEW</span>
-                             @if ($prod->frozen)
+                                            @if ($prod->new)
+                                            <span class="NewProduct">NEW</span>
+                                            @endif                             @if ($prod->frozen)
                                 <div class="FrozenProduct"><i class="fas fa-snowflake"></i><span>Frozen</span></div>
                             @endif
 
