@@ -4411,4 +4411,11 @@ ul {
     border: 1px solid #0056b3;
     color: #ffffff;
 }
+/*Path Style*/
+a.path-link
+{
+  color: #007b70;
+  font-size: 18px;
+  font-weight: 500;
+}
 /*# sourceMappingURL=style.css.map */

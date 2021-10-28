@@ -86,3 +86,106 @@ $('#Edit_Full_Name').click(function(){
 	document.getElementById('Full_Name').setAttribute("contenteditable", "true");
 	$("Full_Name").addClass("Editing-is-enabled");
   });
+
+
+
+
+//   var x = window.location;
+// var y = x.pathname.split('/');
+// y.shift() ;
+// var home = document.createElement("a");
+// home.appendChild(document.createTextNode("Home/"))
+// home.classList.add("path-link")
+// home.setAttribute("href", "https://wenfee.com/");
+
+
+// // we got every path
+// var path = document.createElement("div")
+// for (let i = 0 ; i < y.length ; i++)
+// { 
+//     var a = document.createElement("a")
+//     if (i == y.length-1){
+//         var b = document.createTextNode(y[i])
+//     }
+//     else{
+//         var b = document.createTextNode(y[i] +  "/")
+//     }
+    
+//     path.appendChild(a);
+//     a.classList.add("path-link");
+//     a.appendChild(b);
+
+//         if (b.textContent != "category/")
+//     {
+//         a.setAttribute("href", "https://wenfee.com/" + path.textContent);
+//     }
+// }
+// path.prepend(home)
+// document.body.appendChild(path)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var x = window.location;
+// var y = x.pathname.split('/');
+// y.shift() ;
+// // we got every path
+// var path = document.createElement("div")
+// for (let i = 0 ; i < y.length ; i++)
+// { 
+//     var a = document.createElement("a")
+//     if (i == y.length-1){
+//         var b = document.createTextNode(y[i])
+//     }
+//     else{
+//         var b = document.createTextNode(y[i] +  "/")
+//     }
+//     if (b.textContent != "category/")
+//     {
+//         path.appendChild(a);
+//     }
+//     a.classList.add("path-link");
+//     a.appendChild(b);
+//     a.setAttribute("href", "https://wenfee.com/" + path.textContent);
+// }
+// document.body.appendChild(path)
+
+

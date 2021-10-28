@@ -102,11 +102,12 @@ button {
 .profile-page .name {
   background-color: #009688;
   color: white;
-  padding: 5px 20px;
+  padding: 15px 20px;
   border-radius: 15px 0px 0px 0px;
 }
 
 .profile-page .name h2 {
+  color : #fff;
   font-size: 27px;
   margin-bottom: 0;
 }

@@ -15,8 +15,6 @@
                 <div class="profile-list">
                     <ul>
                         <li class="one" onclick="fun(this, 'one')" id="defaultOpen">Personal information</li>
-                        <li class="two" onclick="fun(this, 'two')">my order</li>
-                        <li class="three" onclick="fun(this, 'three')">my favorite</li>
                         <li class="four" onclick="fun(this, 'four')">change my password</li>
                     </ul>
                 </div>
@@ -33,14 +31,12 @@
                                 <input type="text" name="name" value="{{  auth()->user()->name}}">
                                 <p>Email address</p>
                                 <input type="text" name="email" value="{{  auth()->user()->email }}" readonly>
-                                <p>Address</p>
-                                <input type="text" name="address" value="{{ old('email', auth()->user()->address) }}">
+
 
                             </div>
                             <div class="col-md-5">
-                                <p>Display Name</p>
-                                <input type="text" name="display_name"
-                                    value="{{ old('display_name', auth()->user()->display_name) }}">
+                            <p>Address</p>
+                                <input type="text" name="address" value="{{ old('email', auth()->user()->address) }}">
                                 <p>Phone Number</p>
                                 <input type="text" name="phone" value="{{ old('phone', auth()->user()->phone) }}">
                                 <button type="submit">Save Changes</button>
@@ -101,7 +97,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <p>New Password</p>
-                            <input type="password" name="NewPassword">
+                            <input type="password" id="new_password" name="NewPassword">
                             <p>Current Password</p>
                             <input type="password" name="password">
 
@@ -110,8 +106,8 @@
                         </div>
                         <div class="col-md-5">
                             <p>Confirm Your Password</p>
-                            <input type="password" name="ConfirmPassword">
-                            <button>Change Password</button>
+                            <input type="password" id="confirm_password" name="ConfirmPassword">
+                            <button id="submit">Change Password</button>
                         </div>
                     </div>
                 </div>
