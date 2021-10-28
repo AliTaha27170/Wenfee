@@ -27,7 +27,21 @@ use     App\hellpers\like_;
                         </ul> -->
 
                           <!----------- End Of New List ------------>
-
+                                                  <!----------- New List ------------>
+                    <h2 id="Categories">Categories</h2>
+                        <ul id="List">
+                                @foreach ($categories as $item)
+                                @if (request()->slug)
+                                
+                            <li><a href="#"> {{ $item->name }} </a></li>
+                            @else
+                            <li><a href="#"> {{ $item->name }} </a></li>
+                            @endif
+                            @endforeach
+                        </ul>
+                        
+                          <!----------- End Of New List ------------>
+                        {{--
                         <h2>Category</h2>
                         <div class="select">
                             <select name="slug">
@@ -45,7 +59,7 @@ use     App\hellpers\like_;
                             </select>
                             <div class="select__arrow"></div>
                         </div>
-
+                                    --}}
                         <h2>Price</h2>
                         <input hidden name="maxPrice" value="{{ request()->maxPrice ? request()->maxPrice : 100 }}"
                             type="text" id="maxPrice">

@@ -82,9 +82,9 @@ use     App\hellpers\like_;
 
     <!--_____________________________________________________________________-->
 
-        <!--____________________Section_____________________-->
-
-        <section class="Our-Categories" >
+                <!--____________________Section_____________________-->
+        
+                <section class="Our-Categories" >
         <div class="container-fluid">
             <div class="row">
             <h2 id="Categories-Title">Our Categories</h2>
@@ -96,7 +96,7 @@ use     App\hellpers\like_;
                     <i class="fas fa-home"></i>
                      </div>
                     <h4 class="Categorie-Title">Household</h4>
-                    <p class="Categorie-Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <p class="Categorie-Text">Best kinds of detergents, hookah accessories, and modern electric accessories,  get them now!</p>
                 </div>
             </div>
             </a>
@@ -124,7 +124,7 @@ use     App\hellpers\like_;
                     <i class="fas fa-female"></i>
                      </div>
                     <h4 class="Categorie-Title">Beauty & Personal Care</h4>
-                    <p class="Categorie-Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <p class="Categorie-Text">Shine with the best Make up- Marks.</p>
                 </div>
             </div>
             </a>
@@ -138,7 +138,7 @@ use     App\hellpers\like_;
                     <i class="fas fa-glasses"></i>
                      </div>
                     <h4 class="Categorie-Title">Eyewear & Accessories</h4>
-                    <p class="Categorie-Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <p class="Categorie-Text">Our new-fashion products wait you!</p>
                 </div>
             </div>
             </a>
@@ -152,7 +152,7 @@ use     App\hellpers\like_;
                     <i class="fas fa-baby-carriage"></i>
                      </div>
                     <h4 class="Categorie-Title">Baby & Child</h4>
-                    <p class="Categorie-Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <p class="Categorie-Text">Feed your child with healthy food.</p>
                 </div>
             </div>
             </a>
@@ -166,7 +166,7 @@ use     App\hellpers\like_;
                     <i class="fas fa-utensils"></i>
                      </div>
                     <h4 class="Categorie-Title">Chef Wenfee Catering</h4>
-                    <p class="Categorie-Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <p class="Categorie-Text">For your special taste, we offer ready- snacks.</p>
                 </div>
             </div>
             </a>
