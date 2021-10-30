@@ -112,49 +112,26 @@
 
 
             <!-- Alert Message -->
-            <div class="alert hide">
+            <div class="alert done-successfully hide">
   <span class="fas fa-exclamation-circle"></span>
   <span class="msg">الرسالة</span>
   <div class="close-btn">
     <span class="fas fa-times"></span>
   </div>
 </div>
-<style>
-    .alert{
-  background: #007b71c6;
-  padding: 20px 40px;
-  width: 600px;
-  position: fixed;
-  right: -15px;
-  top: 80%;
-  border-radius: 4px;
-  border-left: 8px solid #007B70;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-  z-index: 400;
-}
-@media  (max-width: 1000px) {
-  .alert
-   {
-    width: 100%;
-  }
- }
-
-</style>
 <script>
     window.onload = function(){
-  $('.alert').addClass("show");
-  $('.alert').removeClass("hide");
-  $('.alert').addClass("showAlert");
+  $('.done-successfully').addClass("show");
+  $('.done-successfully').removeClass("hide");
+  $('.done-successfully').addClass("showAlert");
   setTimeout(function(){
-    $('.alert').removeClass("show");
-    $('.alert').addClass("hide");
+    $('.done-successfully').removeClass("show");
+    $('.done-successfully').addClass("hide");
   },2000);
 };
 $('.close-btn').click(function(){
-  $('.alert').removeClass("show");
-  $('.alert').addClass("hide");
+  $('.done-successfully').removeClass("show");
+  $('.done-successfully').addClass("hide");
 });
 </script>
     <!-- End Of Alert Message -->
