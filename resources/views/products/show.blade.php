@@ -15,7 +15,7 @@ use     App\hellpers\like_;
                         @if ($images)
                             @if (count($images) > 0)
                                 @foreach ($images as $image)
-                                    <div class="product2"><img src="{{ Voyager::image($image) }}" width="70px"
+                                    <div class="product2"><img src="https://wenfee.com/jasmine/thenewwenfee/storage/app/public/{{ $image}}" width="70px"
                                             height="auto" alt=""></div>
                                 @endforeach
                             @endif
@@ -29,7 +29,7 @@ use     App\hellpers\like_;
                         @if ($images)
                             @if (count($images) > 0)
                                 @foreach ($images as $image)
-                                    <div class="product2"><img src="{{ Voyager::image($image) }}" width="250px"
+                                    <div class="product2"><img src="https://wenfee.com/jasmine/thenewwenfee/storage/app/public/{{ $image}}" width="250px"
                                             height="auto" alt=""></div>
                                 @endforeach
                             @endif
