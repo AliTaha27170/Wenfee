@@ -84,11 +84,11 @@ use     App\hellpers\like_;
 
                 <!--____________________Section_____________________-->
 
-                <section class="Our-Categories" >
+                <!-- <section class="Our-Categories" >
         <div class="container-fluid">
-            <div class="row">
+            <div class="row justify-content-center">
             <h2 id="Categories-Title">Our Categories</h2>
-            <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="col-xl-4 col-lg-4 col-md-6">
                 <a href="#">
             <div class="Categories-box">
                 <div class="our-services settings">
@@ -102,21 +102,8 @@ use     App\hellpers\like_;
             </a>
         </div>
 
-        <div class="col-xl-3 col-lg-4 col-md-6">
-                <a href="#">
-            <div class="Categories-box">
-                <div class="our-services settings">
-                    <div class="icon">
-                    <i class="fas fa-briefcase-medical"></i>
-                     </div>
-                    <h4 class="Categorie-Title">Medical Supplies</h4>
-                    <p class="Categorie-Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                </div>
-            </div>
-            </a>
-        </div>
 
-        <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="col-xl-4 col-lg-4 col-md-6">
                 <a href="#">
             <div class="Categories-box">
                 <div class="our-services settings">
@@ -130,7 +117,7 @@ use     App\hellpers\like_;
             </a>
         </div>
 
-        <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="col-xl-4 col-lg-4 col-md-6">
                 <a href="#">
             <div class="Categories-box">
                 <div class="our-services settings">
@@ -144,7 +131,7 @@ use     App\hellpers\like_;
             </a>
         </div>
 
-        <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="col-xl-4 col-lg-4 col-md-6">
                 <a href="#">
             <div class="Categories-box">
                 <div class="our-services settings">
@@ -158,7 +145,7 @@ use     App\hellpers\like_;
             </a>
         </div>
 
-        <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="col-xl-4 col-lg-4 col-md-6">
                 <a href="#">
             <div class="Categories-box">
                 <div class="our-services settings">
@@ -172,40 +159,10 @@ use     App\hellpers\like_;
             </a>
         </div>
 
-        <div class="col-xl-3 col-lg-4 col-md-6">
-                <a href="#">
-            <div class="Categories-box">
-                <div class="our-services settings">
-                    <div class="icon">
-                    <i class="fas fa-hamburger"></i>
-                     </div>
-                    <h4 class="Categorie-Title">American Foods</h4>
-                    <p class="Categorie-Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                </div>
-            </div>
-            </a>
-        </div>
-
-        <div class="col-xl-3 col-lg-4 col-md-6">
-                <a href="#">
-            <div class="Categories-box">
-                <div class="our-services settings">
-                    <div class="icon">
-                    <i class="fas fa-paw"></i>
-                     </div>
-                    <h4 class="Categorie-Title">Pet Care & Foods</h4>
-                    <p class="Categorie-Text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                </div>
-            </div>
-            </a>
-        </div>
-
-
-
 
       </div>
     </div>
-</section>
+</section> -->
 
 
 
