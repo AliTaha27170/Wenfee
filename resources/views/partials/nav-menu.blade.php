@@ -27,7 +27,7 @@ Favorite List
         <form method="POST" action="{{ route('logout') }}">
 @csrf
           <ul class="User-Dropdown">
-            <li><a href="#">Edit Profile</a><i class="fas fa-cog"></i></li>
+            <li><a href="{{ route('profile') }}">Edit Profile</a><i class="fas fa-cog"></i></li>
             <li  id="Fav_Mobile"><a href="{{ route('Fav') }}">Favorite List</a><i class="fas fa-heart"></i></li>
 
             <li  id="logout"><a href="#">Logout </a><i class="fas fa-sign-out-alt"></i></li>
