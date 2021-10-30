@@ -1,5 +1,5 @@
 /*First Navbar*/
-.navbar:first-of-type 
+.navbar:first-of-type
 {
   height: auto;
   padding: 10px 0;
@@ -27,14 +27,14 @@ border-radius: 0;
   cursor: pointer;
   }
   .Username a
-  { 
+  {
     color: #fff;
   }
   .Username a :hover
   {
     color:#f7b036;
   }
-  
+
 
 
 
@@ -324,7 +324,7 @@ border-radius: 0;
 /*Shopping Basket*/
 .PurchaseValue
 {
- 
+
   font-size: 20px;
   padding-left: 10px;
   padding-right: 30px;
@@ -348,14 +348,14 @@ transition: 2s;
 {
   color: #007468;
 }
-#cd-cart-trigger
+.cd-cart-trigger
 {
     position: absolute;
     right: 40px;
     top: 5px;
 }
 @media  (max-width: 1000px) {
-  #cd-cart-trigger
+  .cd-cart-trigger
   {
       top: 0;
   }
@@ -394,7 +394,7 @@ margin: 0 auto;
   top: -2px;
 
 }
-.total-qty 
+.total-qty
 {
   top: 5px;
 }
@@ -432,7 +432,7 @@ margin: 0 auto;
   }
   }
 .ViewCart
-{ 
+{
   height: 26px;
   margin: 15px 10px 0px 10px;
 }
@@ -455,7 +455,7 @@ margin: 0 auto;
 {
   background-color: #006359;
 }
-.MiniCart .Product 
+.MiniCart .Product
 {
   min-height:110px;
 }
@@ -625,12 +625,12 @@ margin: 0 auto;
    position: absolute;
    right: 0;
    top: calc(var(--carousel-height)/2 - 40px);
-   
+
    padding: 5px 15px;
    z-index: 1;
-   
+
    font-size: 30px;
-   
+
    border-top-left-radius: 10px;
    border-bottom-left-radius: 10px;
    border-right: 0;
@@ -838,7 +838,7 @@ margin: 0 auto;
 	text-transform: uppercase;
 	text-decoration: none;
 }
-#ShippingBox a 
+#ShippingBox a
 {
   color: #007b70;
   font-weight: bold;
@@ -855,7 +855,7 @@ margin: 0 auto;
     margin: auto;
     position: absolute;
     z-index: 2;
- 
+
  }
  }
 
@@ -880,7 +880,7 @@ margin: 0 auto;
   opacity:0;
   transition:all .3s;
   z-index: 555;
-  
+
   display:flex;
   align-items:center;
   justify-content:center;
@@ -1073,7 +1073,7 @@ margin: 0 auto;
 
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Modules - reusable parts of our design
 
@@ -1100,9 +1100,9 @@ Modules - reusable parts of our design
   white-space: nowrap;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xheader271 
+xheader271
 
 -------------------------------- */
 header271 {
@@ -1146,10 +1146,10 @@ header271 {
   }
 }
 /*
-#cd-hamburger-menu, #cd-cart-trigger {
+#cd-hamburger-menu, .cd-cart-trigger {
 
 }
-#cd-hamburger-menu a, #cd-cart-trigger a {
+#cd-hamburger-menu a, .cd-cart-trigger a {
 
 }
 */
@@ -1164,7 +1164,7 @@ header271 {
     display: none;
   }
 }
-#cd-cart-trigger a {
+.cd-cart-trigger a {
   width: auto;
 
 }
@@ -1416,9 +1416,9 @@ input::-webkit-inner-spin-button {
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xgallery 
+xgallery
 
 -------------------------------- */
 main {
@@ -1491,9 +1491,9 @@ main {
   animation: cd-fade-in 0.3s;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xkeyframes 
+xkeyframes
 
 -------------------------------- */
 @-webkit-keyframes cd-fade-in {
@@ -1527,7 +1527,7 @@ xkeyframes
 /*Mini cart */
 
 
-.speed-in 
+.speed-in
 {
   z-index: 999 !important;
 }
