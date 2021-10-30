@@ -2784,11 +2784,12 @@ textarea.input1 {
 {
   .product-page .left-panel
   {
+    height: 750px;
     padding: 1px 0%;
-    position: fixed;
+    /* position: fixed; */
     top: 120px;
     left: 30px;
-    width: 20%;
+    width: 80%;
   }
 }
 .product-page .left-panel h2 {

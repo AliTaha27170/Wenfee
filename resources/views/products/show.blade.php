@@ -280,7 +280,7 @@ use     App\hellpers\like_;
         </section>
     </div>
         <!-- adding to cart alert -->
-<div class="alert hide">
+<div class="alert add-to-cart hide">
   <span class="fas fa-exclamation-circle"></span>
   <span class="msg">You added Product to your shopping cart.</span>
   <div class="close-btn">
@@ -289,18 +289,18 @@ use     App\hellpers\like_;
 </div>
 <script>
     $('.add-cart-btn').click(function(){
-  $('.alert').addClass("show");
-  $('.alert').removeClass("hide");
-  $('.alert').addClass("showAlert");
-  setTimeout(function(){
-    $('.alert').removeClass("show");
-    $('.alert').addClass("hide");
-  },2000);
-});
-$('.close-btn').click(function(){
-  $('.alert').removeClass("show");
-  $('.alert').addClass("hide");
-});
+        $('.add-to-cart').addClass("show");
+        $('.add-to-cart').removeClass("hide");
+        $('.add-to-cart').addClass("showAlert");
+        setTimeout(function(){
+            $('.add-to-cart').removeClass("show");
+            $('.add-to-cart').addClass("hide");
+        },2000);
+        });
+        $('.close-btn').click(function(){
+        $('.add-to-cart').removeClass("show");
+        $('.add-to-cart').addClass("hide");
+        });
 </script>
     <!-- adding to cart alert -->
 

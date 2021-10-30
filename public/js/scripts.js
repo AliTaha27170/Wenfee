@@ -271,17 +271,17 @@ $(function (){
 
         /*Alert*/
         $('.add-cart-btn').click(function(){
-            $('.alert').addClass("show");
-            $('.alert').removeClass("hide");
-            $('.alert').addClass("showAlert");
+            $('.add-to-cart').addClass("show");
+            $('.add-to-cart').removeClass("hide");
+            $('.add-to-cart').addClass("showAlert");
             setTimeout(function(){
-              $('.alert').removeClass("show");
-              $('.alert').addClass("hide");
+              $('.add-to-cart').removeClass("show");
+              $('.add-to-cart').addClass("hide");
             },2000);
           });
           $('.close-btn').click(function(){
-            $('.alert').removeClass("show");
-            $('.alert').addClass("hide");
+            $('.add-to-cart').removeClass("show");
+            $('.add-to-cart').addClass("hide");
           });
 
         /*End Of Alert*/
