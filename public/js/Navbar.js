@@ -103,7 +103,7 @@ $(document).ready(function () {
 // });
 
 
-$('.User-avtar').click(function(){
+$('.User-avtar,.FirstNavLinks').click(function(){
   if( $(".User-Dropdown").hasClass( "U-open" ) ){
           $('.User-Dropdown').removeClass("U-open");
   }

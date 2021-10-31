@@ -53,7 +53,7 @@ button {
   text-align: left;
 }
 
-.alert {
+/* .alert {
   width: 100%;
   text-align: center;
   display: block;
@@ -65,7 +65,7 @@ button {
   border-radius: 5px;
   border: #ddd 1px solid;
   text-transform: capitalize;
-}
+} */
 
 .alert.alert-danger {
   border-color: #e70b1e;

@@ -12,12 +12,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Wenfee</title>
-        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel='stylesheet' href="{{ asset('libs/slick/slick.css') }}" />
         <link rel='stylesheet' href="{{ asset('libs/slick/slick-theme.css') }}" />
         <link rel="stylesheet" href="{{ asset('libs/fi/css/uicons-regular-rounded.css') }}">
-        <link rel="stylesheet"  href="{{asset('css/bootstrap.css')}} ">
+        <link rel="stylesheet" href="{{asset('css/bootstrap.css')}} ">
         <link rel="stylesheet" href="{{ asset('css/recipes.css') }}">
         <link rel="stylesheet" href="{{ asset('fonts/fonts.css') }}">
         <link rel='stylesheet' href="{{asset('css/add.css') }}" />
@@ -25,8 +25,6 @@
         @stack('styles')
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="{{ asset('js/ac.js') }}"></script>
-        <script src="{{ asset('js/main.js') }}"></script>
-
         {{-- nav and menu  --}}
         <link rel="stylesheet" href="{{asset('css/Navbar.css')}} ">
 
@@ -114,6 +112,15 @@
 
 
             <!-- Alert Message -->
+            <!-- adding to cart alert -->
+            <div class="alert add-to-cart hide">
+        <span class="fas fa-exclamation-circle"></span>
+        <span class="msg">You added Product to your shopping cart.</span>
+        <div class="close-btn">
+            <span class="fas fa-times"></span>
+        </div>
+        </div>
+    <!-- adding to cart alert -->
 
         @if (session()->has('msg'))
 
@@ -126,41 +133,7 @@
           </div>
 
         @endif
-
-
-<style>
-        .alert{
-  background: #007b71c6;
-  padding: 20px 40px;
-  width: 600px;
-  position: fixed;
-  right: -15px;
-  top: 80%;
-  border-radius: 4px;
-  border-left: 8px solid #007B70;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-  z-index: 10;
-}
-</style>
-<script>
-    window.onload = function(){
-  $('.done-successfully').addClass("show");
-  $('.done-successfully').removeClass("hide");
-  $('.done-successfully').addClass("showAlert");
-  setTimeout(function(){
-    $('.done-successfully').removeClass("show");
-    $('.done-successfully').addClass("hide");
-  },5000);
-};
-$('.close-btn').click(function(){
-  $('.done-successfully').removeClass("show");
-  $('.done-successfully').addClass("hide");
-});
-</script>
-    <!-- End Of Alert Message -->
-
+        <script src="{{ asset('js/main.js') }}"></script>
 </body>
 
 </html>

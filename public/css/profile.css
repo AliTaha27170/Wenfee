@@ -52,19 +52,6 @@ button {
   text-align: left;
 }
 
-.alert {
-  width: 100%;
-  text-align: center;
-  display: block;
-  padding: 15px 2%;
-  margin: 15px;
-  background: #f5f5f5;
-  color: #000;
-  font-size: 16px;
-  border-radius: 5px;
-  border: #ddd 1px solid;
-  text-transform: capitalize;
-}
 
 .alert.alert-danger {
   border-color: #e70b1e;
@@ -232,5 +219,24 @@ button {
 
 .profile-page .personal-list .shopping-cart .cart-page table th:nth-child(1) {
   text-align: left;
+}
+.warning
+{
+  color: #f00;
+  display: block;
+}
+.alert{
+  background: #007b71c6;
+  padding: 20px 40px;
+  width: 600px;
+  position: fixed;
+  right: -15px;
+  top: 80%;
+  border-radius: 4px;
+  border-left: 8px solid #007B70;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 400;
 }
 /*# sourceMappingURL=profile.css.map */

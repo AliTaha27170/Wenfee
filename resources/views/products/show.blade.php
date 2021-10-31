@@ -11,7 +11,7 @@ use     App\hellpers\like_;
                 <div class="col-md-1 product_mob">
                     <div class="slider-nav">
                         <div class="product2"><img src="https://wenfee.com/jasmine/thenewwenfee/storage/app/public/{{ $product->image}}" width="70px" height="auto"
-                                alt=""></div>
+                                alt="" class="thumbnail-style"></div>
                         @if ($images)
                             @if (count($images) > 0)
                                 @foreach ($images as $image)
@@ -279,30 +279,6 @@ use     App\hellpers\like_;
             </div>
         </section>
     </div>
-        <!-- adding to cart alert -->
-<div class="alert add-to-cart hide">
-  <span class="fas fa-exclamation-circle"></span>
-  <span class="msg">You added Product to your shopping cart.</span>
-  <div class="close-btn">
-    <span class="fas fa-times"></span>
-  </div>
-</div>
-<script>
-    $('.add-cart-btn').click(function(){
-        $('.add-to-cart').addClass("show");
-        $('.add-to-cart').removeClass("hide");
-        $('.add-to-cart').addClass("showAlert");
-        setTimeout(function(){
-            $('.add-to-cart').removeClass("show");
-            $('.add-to-cart').addClass("hide");
-        },2000);
-        });
-        $('.close-btn').click(function(){
-        $('.add-to-cart').removeClass("show");
-        $('.add-to-cart').addClass("hide");
-        });
-</script>
-    <!-- adding to cart alert -->
 
     <style>
         .carousel{

@@ -181,53 +181,6 @@ use     App\hellpers\like_;
             </div>
         </div>
     </div>
-    <!-- adding to cart alert -->
-    <div class="alert add-to-cart hide">
-  <span class="fas fa-exclamation-circle"></span>
-  <span class="msg">You added Product to your shopping cart.</span>
-  <div class="close-btn">
-    <span class="fas fa-times"></span>
-  </div>
-</div>
-<style>
-    .alert{
-  background: #007b71c6;
-  padding: 20px 40px;
-  width: 600px;
-  position: fixed;
-  right: -15px;
-  top: 80%;
-  border-radius: 4px;
-  border-left: 8px solid #007B70;
-  overflow: hidden;
-  opacity: 0;
-  pointer-events: none;
-  z-index: 400;
-}
-@media  (max-width: 1000px) {
-  .alert
-   {
-    width: 100%;
-  }
- }
-
-</style>
-<script>
-    $('.add-cart-btn').click(function(){
-        $('.add-to-cart').addClass("show");
-        $('.add-to-cart').removeClass("hide");
-        $('.add-to-cart').addClass("showAlert");
-        setTimeout(function(){
-            $('.add-to-cart').removeClass("show");
-            $('.add-to-cart').addClass("hide");
-        },2000);
-        });
-        $('.close-btn').click(function(){
-        $('.add-to-cart').removeClass("show");
-        $('.add-to-cart').addClass("hide");
-        });
-</script>
-    <!-- adding to cart alert -->
 @endsection
 
 @push('styles')

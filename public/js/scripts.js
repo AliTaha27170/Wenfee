@@ -268,22 +268,5 @@ $(function (){
           $('html, body').animate({scrollTop:0}, '300');
         });
         
-
-        /*Alert*/
-        $('.add-cart-btn').click(function(){
-            $('.add-to-cart').addClass("show");
-            $('.add-to-cart').removeClass("hide");
-            $('.add-to-cart').addClass("showAlert");
-            setTimeout(function(){
-              $('.add-to-cart').removeClass("show");
-              $('.add-to-cart').addClass("hide");
-            },2000);
-          });
-          $('.close-btn').click(function(){
-            $('.add-to-cart').removeClass("show");
-            $('.add-to-cart').addClass("hide");
-          });
-
-        /*End Of Alert*/
         
         /* End Of Brands */
