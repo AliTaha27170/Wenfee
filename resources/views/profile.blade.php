@@ -98,8 +98,10 @@
                         <div class="col-md-6">
                             <p>New Password</p>
                             <input type="password" id="new_password" name="NewPassword">
+                            <span id="new_password_warning" class="warning"></span>
                             <p>Current Password</p>
-                            <input type="password" name="password">
+                            <input type="password" name="password" id="current_password">
+                            <span id="current_password_warning" class="warning"></span>
 
                             <input type="text" hidden name="email" value="{{ auth()->user()->email }}" id="">
 
@@ -107,6 +109,7 @@
                         <div class="col-md-5">
                             <p>Confirm Your Password</p>
                             <input type="password" id="confirm_password" name="ConfirmPassword">
+                            <span id="confirm_password_warning" class="warning"></span>
                             <button id="submit">Change Password</button>
                         </div>
                     </div>
@@ -115,6 +118,9 @@
             </div>
         </div>
     </div>
+    <style>
+        
+    </style>
     <script>
         function fun(event, sec) {
             $(".profile-list .active").removeClass("active");

@@ -87,6 +87,37 @@ $('#Edit_Full_Name').click(function(){
 	$("Full_Name").addClass("Editing-is-enabled");
   });
 
+  /*Add to cart alert*/
+  $('.add-cart-btn').click(function(){
+	$('.add-to-cart').addClass("show");
+	$('.add-to-cart').removeClass("hide");
+	$('.add-to-cart').addClass("showAlert");
+	setTimeout(function(){
+	  $('.add-to-cart').removeClass("show");
+	  $('.add-to-cart').addClass("hide");
+	},2000);
+  });
+  $('.close-btn').click(function(){
+	$('.add-to-cart').removeClass("show");
+	$('.add-to-cart').addClass("hide");
+  });
+  /*Add to cart alert*/
+  /*successfully Alert*/
+  window.onload = function(){
+	$('.done-successfully').addClass("show");
+	$('.done-successfully').removeClass("hide");
+	$('.done-successfully').addClass("showAlert");
+	setTimeout(function(){
+	  $('.done-successfully').removeClass("show");
+	  $('.done-successfully').addClass("hide");
+	},5000);
+  };
+  $('.close-btn').click(function(){
+	$('.done-successfully').removeClass("show");
+	$('.done-successfully').addClass("hide");
+  });
+  /*End of successfully Alert*/
+
 
 
 
