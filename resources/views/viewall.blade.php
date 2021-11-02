@@ -33,9 +33,9 @@ use     App\hellpers\like_;
                                 @foreach ($categories as $item)
                                 @if (request()->slug)
 
-                            <li><a href="#"> {{ $item->name }} </a></li>
+                            <li> <a href="{{ route('view-category', $item->slug) }}"> {{ $item->name }} </a></li>
                             @else
-                            <li><a href="#"> {{ $item->name }} </a></li>
+                            <li><a  href="{{ route('view-category', $item->slug) }}"> {{ $item->name }} </a></li>
                             @endif
                             @endforeach
                         </ul>
@@ -60,6 +60,7 @@ use     App\hellpers\like_;
                             <div class="select__arrow"></div>
                         </div>
                                     --}}
+                                    <input type="text" name="slug" value="{{ isset($slug) ? $slug : $_GET['slug'] ?? ''}}" hidden>
                         <h2>Price</h2>
                         <input hidden name="maxPrice" value="{{ request()->maxPrice ? request()->maxPrice : 100 }}"
                             type="text" id="maxPrice">

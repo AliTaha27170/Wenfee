@@ -184,7 +184,7 @@ class PageController extends Controller
         $query->where('slug',$slug);
     });
     $products=$products->get();
-    return view('viewall',compact('categories','products',));
+    return view('viewall',compact('categories','products', 'slug'));
    }
 // get products || brands
 
@@ -210,7 +210,14 @@ class PageController extends Controller
 
        $categories=ProductCategory::where('parent_id','<>',null)->orderBy('order','asc')->get();
 
+
+
+
         if(isset($request->slug)){
+
+            $category_parent_id=ProductCategory::where('slug',$request->slug)->first()->parent_id;
+            $categories=ProductCategory::where('parent_id',$category_parent_id)->orderBy('order','asc')->get();
+
             $products = Product::with('category')->whereHas('category', function ($query) use($request) {
                 $query->where('slug',$request->slug)->where('price','>=',(int)$request->minPrice)->where('price','<=',(int)$request->maxPrice);
             });
