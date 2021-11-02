@@ -23,22 +23,22 @@ document.forms[3].onsubmit = function(e)
     }
     if(confirmPassword.value === ""){
         confirmPassword.style = "border : 1px solid #f00"
-        confirmPasswordWarning.innerText = "can't be empty"
+        confirmPasswordWarning.textContent = "can't be empty"
     }
     else if (newPassword.value !== confirmPassword.value){
         e.preventDefault();
         confirmPassword.style = "border : 1px solid #f00"
-        confirmPasswordWarning.innerText = "no match"
+        confirmPasswordWarning.textContent = "no match"
     }
     
     else if (newPassword.value === confirmPassword.value &&confirmPassword.value != ""){
         confirmPassword.style = "border : 1px solid #009688"
-        confirmPasswordWarning.innerText = ""
+        confirmPasswordWarning.textContent = ""
     }
      if(currentPassword.value == ""){
         e.preventDefault();
         currentPassword.style = "border : 1px solid #f00"
-        currentPasswordWarning.innerText = "can't be empty"
+        currentPasswordWarning.textContent = "can't be empty"
     }
     
 }
