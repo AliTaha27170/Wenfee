@@ -43,6 +43,3 @@
   <span id="wrong_information">Incorrect login information</span>
   @endif
 
-  @php
-  dd(Session::all());
-@endphp
