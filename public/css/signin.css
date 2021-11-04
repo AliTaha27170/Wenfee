@@ -155,7 +155,11 @@ form .user-details .input-box{
     flex-direction: column;
   }
 }
-
+.warning{
+  display: block;
+  color : #f00;
+  margin : 0 0 0 2px ;
+}
 
 /*Login*/
 
@@ -281,4 +285,23 @@ form a{
 form a:hover{
   text-decoration: underline;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+#wrong_information{
+  display: block;
+  text-align: center;
+  padding: 30px;
+  width: 40%;
+  margin: 0px auto;
+  background: #ff0707cf;
+  border-radius: 8px;
+  color: #fff;
+}
+
  /*Login */
