@@ -30,7 +30,7 @@
                                 <p>Full Name</p>
                                 <input type="text" name="name" value="{{  auth()->user()->name}}">
                                 <p>Email address</p>
-                                <input type="text" name="email" value="{{  auth()->user()->email }}" readonly>
+                                <input type="text" name="email" value="{{  auth()->user()->email }}" >
 
 
                             </div>
@@ -119,7 +119,7 @@
         </div>
     </div>
     <style>
-        
+
     </style>
     <script>
         function fun(event, sec) {

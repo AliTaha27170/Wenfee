@@ -42,6 +42,10 @@
           <input type="submit" value="Register">
         </div>
       </form>
+      @if ((session()->has('errors')))
+
+      <span id="wrong_information">Email Address Is Not Unique ! </span>
+      @endif
     </div>
   </div>
   <script src="{{ asset('js/register.js') }}"></script>

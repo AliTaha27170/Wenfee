@@ -348,45 +348,8 @@ use     App\hellpers\like_;
                     <span>Best Recipes With</span><b>Chef Wenfee</b>
                 </div>
             </h1>
-            <div class="recipes-box">
-                    @foreach($recipes as $recipe)
-                <div class="ft-recipe">
-                    <div class="ft-recipe__thumb">
-                        <img src="https://wenfee.com/jasmine/thenewwenfee/storage/app/public/{{ $recipe->recipe_image }}" />
-                    </div>
-                    <div class="ft-recipe__content">
-                        <header class="content__header">
-                            <div class="row-wrapper">
-                                <h2 class="recipe-title">{{$recipe->title}}</h2>
-                                <div class="user-rating"></div>
-                            </div>
-                            <ul class="recipe-details">
-                                <li class="recipe-details-item time">
-                                    <img src="/img/fi-rr-time-check.svg" alt="">
-                                    <span class="value">20</span><span class="title">Minutes</span>
-                                </li>
-                                <li class="recipe-details-item servings">
-                                    <img src="/img/fi-rr-users.svg" alt="">
-                                    <span class="value">4-6</span><span class="title">Serving</span>
-                                </li>
-                            </ul>
-                        </header>
-                        <p class="description">
-                            There’s no better way to celebrate May being National Strawberry Month than by sharing a sweet
-                            treat
-                            with your pup!!! Strawberries...</p>
-                        <footer class="content__footer"><a href="/recipe/preview/{{ $recipe->slug }}">View Recipe</a></footer>
-                    </div>
-
-                </div>
-                @endforeach
 
 
-            </div>
-            <div class="ta-c">
-                <a href="/recipes" class="button mbtn c2">Show All Recipes<i class="fi fi-rr-arrow-small-right"></i></a>
-            </div>
-            <br><br>
 
                     <!------------------------ Recipes Slider ------------------------>
            <div class="Recipes-Slider">
@@ -427,7 +390,10 @@ use     App\hellpers\like_;
             </div>
                 </div>
 
-
+                <div class="ta-c">
+                    <a href="/recipes" class="button mbtn c2">Show All Recipes<i class="fi fi-rr-arrow-small-right"></i></a>
+                </div>
+                <br><br>
 
 
                   <!------------------------ Recipes Slider ------------------------>

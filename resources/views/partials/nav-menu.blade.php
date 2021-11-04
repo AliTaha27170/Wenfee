@@ -68,7 +68,7 @@ Favorite List
             <div class="row">
 
               @foreach ($cats as $category)
-              @if($category->name!="Grocery & Gourmet Foods" and $category->name!="Cook Books")
+              @if($category->name!="Grocery & Gourmet Foods" )
 
               <div class="col-sm-6 col-lg-3 border-right mb-4">
                 <h6>{{ $category->name }}</h6>

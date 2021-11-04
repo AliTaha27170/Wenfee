@@ -32,7 +32,7 @@ class PageController extends Controller
     $slideCategory    =  ProductCategory::where('is_homepage',1)->with('products')->inRandomOrder()->first();
 
        $slides=Slide::inRandomOrder()->get();
-       $recipes=Recipe::orderby('created_at','DESC')->take(3)->get();
+       $recipes=Recipe::orderby('created_at','DESC')->inRandomOrder()->get();
        $brands=Brand::inRandomOrder()->get();
        $cookbooks=ProductCategory::where('slug','cook-books')->first();
       // $books=Product::where('product_category_id',$cookbooks->id)->get();

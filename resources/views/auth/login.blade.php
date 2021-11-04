@@ -3,8 +3,7 @@
 
 <div class="main_div">
     <div class="title">WENFEE</div>
-
-    <form action="{{route('login')}} "method="POST">
+  <form action="{{route('login')}} "method="POST">
       @csrf
       <div class="input_box">
         <input type="text" placeholder="Email" name="email" required>
@@ -39,4 +38,11 @@
       </div>
     </form>
   </div>
+  @if ((session()->has('errors')))
+
   <span id="wrong_information">Incorrect login information</span>
+  @endif
+
+  @php
+  dd(Session::all());
+@endphp
