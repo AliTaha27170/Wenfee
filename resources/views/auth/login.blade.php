@@ -31,15 +31,11 @@
         <input type="submit" value="Login">
       </div>
       <div class="sign_up">
-
         Not a member? <a href="/register">Signup now</a>
-
-
       </div>
+      @if ((session()->has('errors')))
+      <span id="wrong_information">Incorrect login information</span>
+      @endif
     </form>
   </div>
-  @if ((session()->has('errors')))
-
-  <span id="wrong_information">Incorrect login information</span>
-  @endif
 

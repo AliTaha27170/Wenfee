@@ -112,7 +112,7 @@ form .input-box span.details{
  }
  form .button{
    height: 45px;
-   margin: 35px 0
+   margin: 15px 0
  }
  form .button input{
    height: 100%;
@@ -274,7 +274,6 @@ form .option_div{
 }
 form .sign_up{
   text-align: center;
-  margin-top: 25px;
 }
 .sign_up a{
   color: #009688;
@@ -294,14 +293,8 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 #wrong_information{
-  display: block;
   text-align: center;
-  padding: 30px;
-  width: 40%;
-  margin: 0px auto;
-  background: #ff0707cf;
-  border-radius: 8px;
-  color: #fff;
+  display: block;
+  color: #f00;
 }
-
  /*Login */
