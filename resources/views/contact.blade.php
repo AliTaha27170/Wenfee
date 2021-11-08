@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<div class="Contact-container">
+<div class="Contact-container" id="">
   <div class="content">
     <div class="left-side">
       <div class="address details">

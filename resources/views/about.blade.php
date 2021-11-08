@@ -17,7 +17,13 @@
                         <div class="about_header_main mt-3">
                             <div class="about_icon_box">
                             </div>
-                            <p class="About-Text text-muted mt-3">Welcome to Wenfee.com <br> We have specialized in gourmet foods since 1965, and we aim to offer our customers a variety of the latest Middle Eastern Products. We’ve come a long way, so we know exactly which direction to take when supplying you with high quality yet budget friendly products. We offer all of this while providing excellent customer service and friendly support. <br> <br> The interests of our customers are always the top priority for us, so we hope you will enjoy our products as much as we enjoy making them available to you. <br> <br> <span style="color : #007B70 ; font-weight : 500">We know you have a choice. <br> Thank You for Choosing to Shop with us. <br> We Appreciate your Business. </span> </p>
+                            <p class="About-Text text-muted mt-3">Welcome to Wenfee.com <br> Najib Est. Inc. Is A Family Owned Business With Its Roots Starting From Its Principal Company, Yahya Najib, Which Was Established In 1936. Yahya Najib Is One Of The Leading Importers, Exporters And Agents For Manufacturers Worldwide, With Their Main Offices In Syria And Branching Out To Different Countries. The Company Is A Representing Agent For Manufacturers Of Medicine From Europe, Swiss Watches, Japanese Machinery And Cosmetic Companies In Germany.
+
+With Yahya Najib As Our Backbone, We Have Developed To Be One Of The Major Importer, Exporter, And Agent. We Are A Supplier Of Lots Of Products; Some Of The Products That We Supply Are Vitamins, Sexual Health Supplements, Medical Equipment Accessories, Mediterranean And European Food Products, And Hookahs. We Continue To Grow Through Our Long-Standing Partnerships With Manufacturers And Suppliers Of The Highest Quality Products From All Over The World. We Are Introducing To Our Products American Made Natural Supplements And Medical Accessories. We Travel The World For Traditional Items And For The Most Exciting New Products In Order To Enrich Our Customers’ Choices. We Always Include The Healthiest Options Together With Traditional Ones.
+
+We Warmly Welcome All Friends From All Over The World To Be Our Business Partners On The Basis Of Equality And Benefits To Create A Good Future.
+
+Our Mission Is To Provide Our Customers With The Highest Quality Of Products.</span> </p>
                         </div>
                     </div>
                 <div class="row mt-3">

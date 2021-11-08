@@ -4430,6 +4430,9 @@ a.path-link
  .thumbnail-style
  {
    padding : 2px ;
-   border : 1px solid #007B70 ;
    border-radius: 4px;
+ }
+ .col-md-1 .slick-slide.slick-current{
+  border: 1.5px solid #007b70;
+  border-radius: 3px;
  }

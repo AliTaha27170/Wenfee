@@ -40,6 +40,7 @@
         </div>
         <div class="button">
           <input type="submit" value="Register">
+          <span class="wrong_information">Incorrect login information</span>
         </div>
       </form>
       @if ((session()->has('errors')))
