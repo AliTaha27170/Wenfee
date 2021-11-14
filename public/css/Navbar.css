@@ -355,6 +355,12 @@ transition: 2s;
     top: 5px;
 }
 @media  (max-width: 1000px) {
+  .PurchaseValue{
+    display: none;
+  }
+  .Shopping-cart i{
+    margin: 0 15px 2px 0;
+  }
   .cd-cart-trigger
   {
       top: 0;
