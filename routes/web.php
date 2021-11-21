@@ -17,8 +17,7 @@ use App\Http\Controllers\SearchController;
 use App\Models\Product;
 
 use Composer\DependencyResolver\Request;
-
-
+use Illuminate\Support\Facades\Redirect;
 
 /*
 
@@ -316,3 +315,15 @@ Route::get('/config-cache', function() {
 //get prodcts
 
 Route::get('get_p/{id}',[PageController::class , 'getProducts'])->name('g_products');
+
+
+Route::get('/strorge/products/{pp}/{hi}', function($pp,$hi) {
+    return Redirect::to('https://wenfee.com/jasmine/thenewwenfee/storage/app/public/products/' . $pp .'/'. $hi);
+});
+
+
+Route::get('/{a1}/{a2}/{a3}/{a4}/{a5}/{a6}/{aa}/{bb}/{cc}/{dd}', function($a1,$a2,$a3,$a4,$a5,$a6,$aa,$bb,$cc,$dd) {
+    return Redirect::to('https://wenfee.com/jasmine/thenewwenfee/storage/app/public/products/' . $aa .'/'. $dd);
+    echo $bb.$cc;
+});
+

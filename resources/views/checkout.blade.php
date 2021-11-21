@@ -186,7 +186,7 @@
           <li class="active" data-cont=".credit-card">Credit Card</li>
           <li data-cont=".cash-payment">Cash payment</li>
           <li data-cont=".pay-with-check">Pay with Check/Money Order</li>
-          <li data-cont=".ali-taha">Ali Taha</li>
+          <li data-cont=".ali-taha">New</li>
         </ul>
 
         <div class="methods-content">
@@ -223,14 +223,15 @@
           </div>
 
           <div class="ali-taha">
-            <p>Hello Ali</p>
+            <p>new new new </p>
           </div>
 
         </div>
 
       </div>
       <!-- End Of Third Section (Payment Methods) -->
-      <center><button>submit</button></center>
+      <br><br>
+      <center><button class="btn btn-success">Place order</button></center>
     </form>
   </div>
 </div>
