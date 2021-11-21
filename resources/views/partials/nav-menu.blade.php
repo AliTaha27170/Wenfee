@@ -40,9 +40,9 @@ Favorite List
 
       @else
       <div class="Registration">
-        <a href="/login" class="FirstNavLinks">Login</a>
+        <a href="https://wenfeeusa.americommerce.com/store/login.aspx?progress=false&r=%2fstore%2fshopcart.aspx" class="FirstNavLinks">Login</a>
         <span id="NavSpan">|</span>
-        <a href="/register" class="FirstNavLinks">Register</a>
+        <a href="https://wenfeeusa.americommerce.com/store/register.aspx?r=%2fstore%2fshopcart.aspx&progress=false" class="FirstNavLinks">Register</a>
         <i class="fas fa-user User-Icon"></i>
       </div>
       @endif
@@ -128,6 +128,7 @@ Favorite List
         <li class="nav-item"><a class="nav-link" href="../.../../all?offer=on">Our Offers</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ route('brands') }}">Brands</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ route('recipes') }}">Recipes</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://wenfeeusa.americommerce.com/store/myaccount.aspx#Orders">My Orders</a></li>
         {{--
         <li class="nav-item"><a class="nav-link" href="{{ route('HowToOrder') }}">How To Order</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ route('ShippingInformation') }}">Shipping Information</a></li>

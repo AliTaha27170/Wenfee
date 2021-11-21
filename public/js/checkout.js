@@ -2,16 +2,13 @@
 
 var pickUpFree = document.getElementById("pickup_free");
   
-pickUpFree.onclick = function ()
-{
+pickUpFree.onclick = function (){
 document.getElementById('pickup_free_div').style = "display : block ;"
 }
-function Hide()
-{
+function Hide(){
 document.getElementById('pickup_free_div').style = "display : none ;"
 }
 /*End Of Radio Inputs Script*/
-
 /*Tabs Section Script*/
 let tabs = document.querySelectorAll(".methods li");
 let tabsArray = Array.from(tabs);
