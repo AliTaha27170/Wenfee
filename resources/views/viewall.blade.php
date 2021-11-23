@@ -10,6 +10,13 @@ use     App\hellpers\like_;
     <div class="product-page">
         <div class="row">
 
+@if (strpos(Request::path(), 'brand')  !== false )
+<style>
+    .left-panel{
+        display: none;
+    }
+</style>
+@endif
             <div class="col-md-3">
                 <form id="search-form" action="{{ route('viewall') }}" method="GET">
 
